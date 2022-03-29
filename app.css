@@ -20,18 +20,13 @@
   color: white;
 }
 
-.form-control {
-  margin-bottom: 2px;
-  /* color: black; */
-  /* border-top: 1px dashed black; */
-}
-
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  width: 4rem;
 }
 
 .saveBtn i:hover {
@@ -39,12 +34,14 @@
   transition: all 0.3s ease-in-out;
 }
 .input-group,
-.input-group-prepend {
+.prepend {
   height: 80px;
 }
 
-/* .field {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
-} */
+.input-group {
+  margin-bottom: 0.2rem;
+}
+
+.fas {
+  font-size: x-large;
+}

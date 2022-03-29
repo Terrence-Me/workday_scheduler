@@ -20,7 +20,7 @@ const userInput = function (e) {
     this.parentNode.firstChild.nextElementSibling.firstElementChild.innerText;
   console.log(prepend);
   console.log(input);
-  // localStorage.setItem(prepend, JSON.stringify(input));
+
   localStorage.setItem(prepend, input);
 };
 
@@ -41,7 +41,6 @@ const inputfieldColor = function () {
 inputfieldColor();
 
 const loadInputs = function () {
-  // console.log(document.getElementById('9AM'));
   document.getElementById('h9').value = localStorage.getItem('09:00AM');
   document.getElementById('h10').value = localStorage.getItem('10:00AM');
   document.getElementById('h11').value = localStorage.getItem('11:00AM');
@@ -52,15 +51,6 @@ const loadInputs = function () {
   document.getElementById('h16').value = localStorage.getItem('04:00PM');
   document.getElementById('h17').value = localStorage.getItem('05:00PM');
 };
-
-// const userInput = (e) => {
-//   e.preventDefault();
-//   input = e.currentTarget.previousElementSibling.value.trim();
-//   // enteredInput = input.value.trim(); // this gets me the value
-//   prepend = this;
-//   console.log(prepend);
-//   console.log(input);
-// };
 
 setInterval(displayTime, 30000);
 for (const saveBtn of saveBtns) {
